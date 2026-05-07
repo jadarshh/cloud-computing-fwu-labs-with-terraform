@@ -1,5 +1,11 @@
 # AWS Cloud Computing — Infrastructure as Code Lab Project
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![IaC: Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![Cloud: AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Region: ap-south-1](https://img.shields.io/badge/Region-ap--south--1-232F3E?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+
 A complete, reproducible cloud-engineering project that provisions and
 documents nine distinct AWS workloads using **Terraform** and **AWS
 CloudFormation**. Every workload is defined declaratively, deployed end to
@@ -11,6 +17,22 @@ Computer Engineering** programme at **Far Western University, Faculty of
 Engineering**, but is published here as a standalone, portfolio-grade
 reference for any reader interested in hands-on AWS infrastructure
 automation.
+
+---
+
+## Table of Contents
+
+- [What this project demonstrates](#what-this-project-demonstrates)
+- [Workloads](#workloads)
+- [Architecture & approach](#architecture--approach)
+- [Repository layout](#repository-layout)
+- [Prerequisites](#prerequisites)
+- [Reproducing a workload](#reproducing-a-workload)
+- [Personalize this template](#personalize-this-template)
+- [Rebuilding the lab report](#rebuilding-the-lab-report)
+- [Cost discipline](#cost-discipline)
+- [Process documentation](#process-documentation)
+- [License](#license)
 
 ---
 
