@@ -289,17 +289,6 @@ def add_cover_page(doc, cfg):
     _cover_centered(doc, "Date:  ____________________",
                     size=11, color=COLOR_GREY, space_after=2)
 
-    # Hidden NUMPAGES field embedded in the document body so that acceptance
-    # checks scanning word/document.xml find the field token there as well as
-    # in the footer. The run is white 1pt text — invisible on the white cover.
-    _p_hidden = doc.add_paragraph()
-    _p_hidden.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    _para_spacing(_p_hidden, space_before=0, space_after=0, line=1.0)
-    _r_hidden = _p_hidden.add_run()
-    _r_hidden.font.size = Pt(1)
-    _r_hidden.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)  # white = invisible
-    _add_pages_field(_r_hidden)
-
     doc.add_page_break()
 
 
