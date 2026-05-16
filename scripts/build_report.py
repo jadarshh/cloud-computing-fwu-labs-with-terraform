@@ -11,6 +11,11 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parent.parent
+LOCAL_DEPS = ROOT / ".python_deps"
+if LOCAL_DEPS.exists():
+    sys.path.insert(0, str(LOCAL_DEPS))
+
 from docx import Document
 from docx.enum.table import WD_ALIGN_VERTICAL
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
@@ -21,7 +26,6 @@ from docx.shared import Inches, Pt, RGBColor
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.config import load  # noqa: E402
 
-ROOT = Path(__file__).resolve().parent.parent
 SHOTS = ROOT / "screenshots"
 
 # ---------------------------------------------------------------------------
