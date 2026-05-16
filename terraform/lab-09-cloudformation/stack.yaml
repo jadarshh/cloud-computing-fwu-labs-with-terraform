@@ -7,7 +7,7 @@ Description: >
 Parameters:
   OwnerName:
     Type: String
-    Default: mukesh
+    Default: adarsh
     Description: Owner identifier (lowercase) used in resource names and tags
 
   VpcCidr:
